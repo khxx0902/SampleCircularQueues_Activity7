@@ -16,6 +16,12 @@ namespace CircularQueues_CSharp
             if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1))
             {
                 Console.WriteLine("\nQueue overflow\n");
+                return;
+            }
+            if (FRONT == -1)
+            {
+                FRONT = 0;
+                REAR = 0;
             }
         }
     }

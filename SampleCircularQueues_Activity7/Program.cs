@@ -79,6 +79,7 @@ namespace CircularQueues_CSharp
                     Console.WriteLine(queue_array[FRONT_position] + "   ");
                     FRONT_position++;
                 }
+                FRONT_position = 0;
             }
         }
     }
